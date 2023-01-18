@@ -1,0 +1,32 @@
+{
+    "name": "liumenggit/ace",
+    "alias": "Ace编辑器",
+    "description": "代码编辑器",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/liumenggit/dcat-ace",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rrsyycm",
+            "email": "rrsyycm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liumenggit\\Ace\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Liumenggit\\Ace\\AceServiceProvider",
+        "laravel": {
+            "providers": [
+                "Liumenggit\\Ace\\AceServiceProvider"
+            ]
+        }
+    }
+}
